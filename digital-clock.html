@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;        
-        }
-        .clock {
-            width: 400px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #00c3ff;
-            padding: 30px;
-            border-radius: 15px;
-            border: 4px solid #333;
-            background: black;
-            box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
-        }
-        .time {
-            font-size: 80px;
-            font-weight: bold;
-            margin: 0;
-        }
-        .am-pm {
-            font-size: 20px;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: #ffd700;
-        }
-        .red-dot {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            width: 12px;
-            height: 12px;
-            background: red;
-            border-radius: 50%;
-            animation: blink 1s infinite alternate;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            100% { opacity: 0.2; }
-        }
-        .date {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #00c3ff;
-            text-shadow: 0 0 10px rgba(0, 195, 255, 0.8);
-        }
-    </style>
+    <link ref="stylesheet" href="style.css">
 </head>
 <body>
     <div class="clock">
